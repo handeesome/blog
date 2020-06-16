@@ -1,5 +1,5 @@
 title = "The most boring Blog"
-baseURL = "https://cenhandu.com/"
+baseURL = "https://ducenhan.netlify.app/"
 theme = "bilberry-hugo-theme"
 
 # Generate the robots.txt file for SEO
@@ -38,7 +38,7 @@ disqusShortname = "bilberry-hugo-theme"
   enable_mathjax    = false
 
   # Enable / Disable algolia search
-  algolia_search    = true
+  algolia_search    = false
   algolia_appId     = "Y2C4RWMPXW"
   algolia_apiKey    = "50ea7f8c41c0ad233926e0be2b769ed1"
   algolia_indexName = "default-content"
