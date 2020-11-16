@@ -12,8 +12,12 @@ Everything in Dart are objects!
 `import 'dart::io'`
 
 `var` is like `auto` in cpp.
+- `var v2 = v1` is not copying, but pointing
+- `var v2 = [...v1]` is copying
 
 use `dynamic` to make an object flexible.
+
+`num` is `int` and `double`
 
 - stdout.writeln('');
 - stdin.readLineSync();
@@ -39,15 +43,32 @@ type conversion:
 
 `const` does not need to use `var` or variable name specifically
 
-1
+operators: `?.` `??` `??=`
+- `?.`: unclear some `var` has a property or not
+- `??`: when the previous `?.` part is `null`, add value after `??` to make it the value temporarily
+- `??=`: like `??` but actually assign the value to the object
 
-1
-1
-1
+Ternary operator
+like `macro` 
+    example: 
+        `int x = 100`
+        `var result = x % 2 == 0 ? 'even' : 'odd';`
 
+positional parameter has to include `{}`
+example: `dynamic sum(var one, {var two = 2}) => one + two;`
+        or `dynamic sum(var one, {var two}) => one + (two ?? 3);`
 
-1
+optional parameter `[]`
+example: `dynamic sum(var one, [var two = 2]) => one + two;`
+        or `dynamic sum(var one, [var two]) => one + (two ?? 2);`
 
-11
+class 
+`final`: you can only change the property at the initial once
+`static`: apply for all objects in this class
+`extend`: inherit a class
+`super`： pass parameter
+`@override`S
+`get`: num get right => left + width;
+`set`: set right(num value) => left = value - width; 
 
-1
+REFERENCE: https://www.youtube.com/watch?v=Ej_Pcr4uC2Q
